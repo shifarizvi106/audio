@@ -6,7 +6,7 @@ async function processVoiceNote(audioBlob) {
   const formData = new FormData();
   formData.append("file", audioBlob, "audio.ogg");
   formData.append("model", "whisper-large-v3");
-  formData.append("prompt", "Hinglish, bro, scene, cringe, bakchodi, sorted, system, yaar, gawar, logg, cewllez, Khwab, gang, kya bolti public, pagal-wagal, mereko. ");
+  formData.append("prompt", "scene, cringe, bakchodi, sorted, system, yaar, gawar, logg, cewllez, Khwab, gang, kya bolti public, pagal-wagal, mereko, retarded, ulti ");
 
   const sttRes = await fetch("https://api.groq.com/openai/v1/audio/transcriptions", {
     method: "POST",

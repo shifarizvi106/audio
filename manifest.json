@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Shifa Audio Transcriber",
+  "version": "1.0",
+  "description": "Transcribes and decodes Shifa's voice notes on WhatsApp Web using Groq & Llama 3.",
+  "permissions": ["activeTab"],
+  "host_permissions": [
+    "https://web.whatsapp.com/*",
+    "https://api.groq.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
